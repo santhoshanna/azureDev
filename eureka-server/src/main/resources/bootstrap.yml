@@ -1,0 +1,14 @@
+server:
+  port: 8761
+spring:
+  application:
+    name: eureka-server
+  profiles:
+    active: development-cloud        
+  cloud:
+    config:
+      enabled: true # note this needs to be turned on if you wnat the config server to work
+      uri: http://localhost:8888  
+      discovery:
+        enabled: false
+    #    serviceId: eureka-server 

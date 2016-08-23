@@ -1,0 +1,15 @@
+server:
+  port: 8001
+spring:
+  application:
+    name: plm-bom-ms
+  profiles:
+    active: development-cloud     
+  cloud:
+    config:
+      enabled: true # note this needs to be turned on if you wnat the config server to work
+      uri: http://localhost:8888 
+   #   discovery:
+   #     enabled: true
+   #     serviceId: plm-bom-ms   
+   
